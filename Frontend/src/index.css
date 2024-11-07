@@ -2,47 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-50 
+  @apply bg-zinc-900 text-zinc-50;
 }
 
 .menu-btn {
-  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform] active:scale-95
+  @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform] active:scale-95;
 }
 
 .navbar {
-  @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 
-  ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+  @apply md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible;
   transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
-
 .navbar.active {
-  @apply opacity-100 scale-100 blur-0 visible
+  @apply opacity-100 scale-100 blur-0 visible ;
 }
 
 .nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
 }
 
+/* Keep the active-box background white */
+.active-box {
+  @apply absolute bg-white rounded-xl z-10;
+  transition: top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+/* Set the active link text color to dark (text-zinc-900) */
 .nav-link.active {
-  @apply text-zinc-900 duration-500
+  @apply text-zinc-900 font-semibold; /* Dark text color for active link */
+  transition: color 0.3s ease;
 }
 
-.navbar .active-box {
-  @apply absolute top-2 left-2 right-2 h-9 bg-zinc-50 rounded-xl z-10;
-  transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease; /* Combine all transitions */
-}
 
 .btn {
-  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color];
 }
 
 .btn-secondary {
-  @apply bg-zinc-50 text-zinc-900
+  @apply bg-zinc-50 text-zinc-900;
 }
