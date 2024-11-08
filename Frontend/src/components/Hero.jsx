@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import { ButtonPrimary } from './Button'
+import { ButtonPrimary, ButtonOutline } from './Button'
 
 
 const Hero = () => {
@@ -39,7 +39,11 @@ const Hero = () => {
                       label="Download CV"
                       icon="download" />
 
-                    Button Outline
+                    < ButtonOutline
+                      href="#about"
+                      label="Scroll down"
+                      icon="arrow_downward"
+                      />
                 </div>
             </div>
 
