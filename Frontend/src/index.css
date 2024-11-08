@@ -37,7 +37,7 @@ body {
 
 /* Set the active link text color to dark (text-zinc-900) */
 .nav-link.active {
-  @apply text-zinc-900 font-semibold; /* Dark text color for active link */
+  @apply text-zinc-900 font-semibold z-20; /* Dark text color for active link */
   transition: color 0.3s ease;
 }
 
@@ -111,4 +111,20 @@ body {
 
 .title-1 {
   @apply text-[22px] font-normal
+}
+
+
+/* text field */
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset 
+  ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400
+  focus:ring-2
+}
+
+.text-field::placeholder{
+  @apply text-zinc-400
 }
