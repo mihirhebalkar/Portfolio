@@ -53,18 +53,21 @@ const Skill = () => {
             <h2 className='headline-2'>
                 Essential Tools I use
             </h2>
-            <div className='grid gap-3 sm:grid-cols-2 md:grid-cols-4 md:grid-cols-[repeat(auto-fill, minmax(250px, 1fr))]'>
-    {
-        skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard
-                key={key}
-                imgSrc={imgSrc}
-                label={label}
-                desc={desc}
-            />
-        ))
-    }
-</div>
+
+            <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {
+                skillItem.map(({ imgSrc, label, desc }, key) => (
+                <SkillCard
+                    key={key}
+                    imgSrc={imgSrc}
+                    label={label}
+                    desc={desc}
+                />
+                ))
+            }
+            </div>
+
+
 
 
         </div>
