@@ -109,6 +109,11 @@ body {
   @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
 }
 
+.headline-3 {
+  @apply text-5xl leading-tight font-semibold lg:text-[20px]
+  lg:leading-[1.15]
+}
+
 .title-1 {
   @apply text-[22px] font-normal
 }

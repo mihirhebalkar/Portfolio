@@ -20,19 +20,20 @@ const Hero = () => {
                         className='img-cover'/>
                     </figure>
 
-                    <div className='flex items-center gap-1,5 text-zinc-400 text-sm tracking-wide'>
+                    <div className='flex items-center gap-2 text-zinc-400 text-sm tracking-wide'>
                         <span className='relative w-2 h-2 rounded-full bg-emerald-400'>
                             <span className='absolute inset-0 rounded-full bg-emerald-400 animate-ping'></span>
                         </span>
-                        Available for Work
+                        Coding
                     </div>
                 </div> 
 
                 <h2 className='headline-1 max-w-[15ch] sm:max-w-[20ch]
                 lg:max-w-[15ch] mt-5'>
-                Building Scalable Modern Websites for the Future
-
+                Mihir Hebalkar
                 </h2>
+                <h3 className='headline-3 max-w-[20ch] sm:max-w-[20ch]
+                lg:max-w-[20ch] mt-5 mb-5'>Full Stack Developer</h3>
 
                 <div className='flex items-center gap-3'>
                     < ButtonPrimary
@@ -50,12 +51,12 @@ const Hero = () => {
             </div>
 
             <div className='hiddent lg:block'>
-                    <figure className='w-full max-w-[360px] ml-auto
-                    bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden'>
+                    <figure className='w-full max-w-[200px] ml-auto
+                    overflow-hidden'>
                         <img 
-                          src="/images/hero-banner.png"
-                          width={320}
-                          height={600} alt="" className='w-full' />
+                          src="/images/hero-final.png"
+                          width={100}
+                          height={180} alt="" className='w-full' />
                     </figure>
             </div>
         </div>
