@@ -2,45 +2,16 @@ import React from 'react';
 import SkillCard from './SkillCard';
 
 const skillItem = [
-  {
-    imgSrc: '/images/figma.svg',
-    label: 'Figma',
-    desc: 'Design tool',
-  },
-  {
-    imgSrc: '/images/css3.svg',
-    label: 'CSS',
-    desc: 'User Interface',
-  },
+
   {
     imgSrc: '/images/javascript.svg',
     label: 'JavaScript',
     desc: 'Interaction',
   },
   {
-    imgSrc: '/images/nodejs.svg',
-    label: 'NodeJS',
-    desc: 'Web Server',
-  },
-  {
-    imgSrc: '/images/expressjs.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework',
-  },
-  {
-    imgSrc: '/images/mongodb.svg',
-    label: 'MongoDB',
-    desc: 'Database',
-  },
-  {
-    imgSrc: '/images/react.svg',
-    label: 'React',
-    desc: 'Framework',
-  },
-  {
-    imgSrc: '/images/tailwindcss.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface',
+    imgSrc: '/images/cpp.svg',
+    label: 'C++',
+    desc: 'Programming Language',
   },
   {
     imgSrc: '/images/python.svg',
@@ -48,24 +19,30 @@ const skillItem = [
     desc: 'Programming Language',
   },
   {
-    imgSrc: '/images/cplusplus.svg',
-    label: 'C++',
-    desc: 'Programming Language',
+    imgSrc: '/images/mysql.svg',
+    label: 'MySQL',
+    desc: 'Database',
   },
   {
-    imgSrc: '/images/java.svg',
-    label: 'Java',
-    desc: 'Programming Language',
+    imgSrc: '/images/mongodb.svg',
+    label: 'MongoDB',
+    desc: 'Database',
   },
   {
-    imgSrc: '/images/vscode.svg',
-    label: 'VSCode',
-    desc: 'Code Editor',
+    imgSrc: '/images/expressjs.svg',
+    label: 'ExpressJS',
+    desc: 'Node Framework',
   },
   {
-    imgSrc: '/images/sql.svg',
-    label: 'SQL',
-    desc: 'Database Language',
+    imgSrc: '/images/react.svg',
+    label: 'React',
+    desc: 'Framework',
+  },
+
+  {
+    imgSrc: '/images/nodejs.svg',
+    label: 'NodeJS',
+    desc: 'Web Server',
   },
   {
     imgSrc: '/images/git.svg',
@@ -73,18 +50,25 @@ const skillItem = [
     desc: 'Version Control',
   },
   {
-    imgSrc: '/images/linux.svg',
-    label: 'Linux',
-    desc: 'Operating System',
+    imgSrc: '/images/figma.svg',
+    label: 'Figma',
+    desc: 'Design tool',
   },
+  {
+    imgSrc: '/images/tailwindcss.svg',
+    label: 'TailwindCSS',
+    desc: 'User Interface',
+  },
+
+
 ];
 
 const Skill = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2">Essential Tools I use</h2>
-        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <h2 className="headline-2  mb-8">Essential Tools and Technologies I use</h2>
+        <div className="grid gap-y-3 gap-x-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
             <SkillCard
               key={key}

@@ -18,8 +18,8 @@ export const App = () => {
         <Hero />
         <About />
         <Skill />
-        <Education />
         <Work />
+        <Education />
         <Certifications />
         
         <Contact />

@@ -32,14 +32,16 @@ const Hero = () => {
                 lg:max-w-[15ch] mt-5'>
                 Mihir Hebalkar
                 </h2>
-                <h3 className='headline-3 max-w-[20ch] sm:max-w-[20ch]
-                lg:max-w-[20ch] mt-5 mb-5'>Full Stack Developer</h3>
+                <h3 className='headline-3 max-w-[20ch] sm:max-w-[20ch] lg:max-w-[20ch] mt-5 mb-5 text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-zinc-300/100'>
+                  Full Stack Developer
+                </h3>
+
 
                 <div className='flex items-center gap-3'>
                     < ButtonPrimary
                       href="/Resume.pdf"
                       target='_blank'
-                      label="Download CV"
+                      label="Download Resume"
                       icon="download" />
 
                     < ButtonOutline
