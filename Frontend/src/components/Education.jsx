@@ -26,7 +26,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="pt-28 lg:pt-36">
+    <section id="bio" className="pt-28 lg:pt-36">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="headline-2 mb-5 text-center lg:text-left">Education</h2>
         <div className="bg-zinc-800/50 p-5 rounded-2xl">
@@ -38,7 +38,7 @@ const Education = () => {
               >
 
                 <div className="flex items-center gap-4 w-full md:w-2/3">
-                  <figure className="w-12 h-12 rounded-lg overflow-hidden bg-white">
+                  <figure className="w-10 h-10 rounded-lg overflow-hidden bg-white">
                     <img
                       src={edu.icon}
                       alt={edu.institution}
